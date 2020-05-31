@@ -1,0 +1,7 @@
+version: "1"
+service:
+  app:
+    image: tgaru/bundla-php:7.2
+    restart: unless-stopped
+    volumes:
+      - ./src:/var/www/html
